@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Psicóloga Camila Kozaka</title>
+    <script>
+      // Restore path from GitHub Pages 404 redirect
+      ;(function () {
+        var redirect = sessionStorage.redirect
+        delete sessionStorage.redirect
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect)
+        }
+        var p = new URLSearchParams(location.search).get('p')
+        if (p) {
+          history.replaceState(
+            null,
+            null,
+            p + (new URLSearchParams(location.search).get('q') ? '?' + new URLSearchParams(location.search).get('q').replace(/~and~/g, '&') : '') + location.hash,
+          )
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
