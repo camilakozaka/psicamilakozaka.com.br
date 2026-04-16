@@ -48,3 +48,5 @@ Reusable CSS utility classes defined in `styles.css` (use as `className`):
 
 - Display/headings: `Fraunces` (apply `.display-title` class)
 - Body: `Manrope` (default `--font-sans`)
+
+When the user asks you to "publicar" tou should commit everything and push
