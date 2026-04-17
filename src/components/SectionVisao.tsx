@@ -1,38 +1,35 @@
 export default function SectionVisao() {
   return (
-    <section id="sobre" className="section-alt py-20 sm:py-24">
+    <section id="sobre" className="bg-white pt-8 pb-0">
       <div className="page-wrap px-4">
-        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          {/* Text */}
-          <div>
-            <span className="accent-line" />
-            <p className="island-kicker mb-3">Minha visão da terapia</p>
-            <h2 className="display-title mb-6 text-4xl font-bold leading-tight text-[var(--ink)] sm:text-5xl">
-              A terapia como um lugar precioso
-            </h2>
-            <p className="mb-5 text-base leading-8 text-[var(--ink-soft)]">
-              Acredito que a terapia é um dos gestos mais corajosos que alguém pode fazer por si mesmo.
-              É um espaço onde não há resposta certa, onde o tempo é seu — para pausar, sentir e entender.
-            </p>
-            <p className="text-base leading-8 text-[var(--ink-soft)]">
-              Não estou aqui para dizer o que você deve fazer ou pensar.
-              Estou aqui para caminhar junto, com escuta real e presença genuína,
-              enquanto você encontra o seu próprio caminho.
-            </p>
-          </div>
+        {/* Rounded blue surface wrap */}
+        <div className="relative overflow-hidden rounded-t-[3rem] bg-[var(--sky-pale)] px-6 py-20 sm:rounded-t-[5rem] sm:px-12 sm:py-28">
+          {/* Inner arch ring */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute left-1/2 top-0 h-[85%] w-[90%] -translate-x-1/2 rounded-b-[50%] bg-white/60"
+          />
 
-          {/* Visual accent */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative h-72 w-72 sm:h-80 sm:w-80">
-              <div className="absolute inset-0 rounded-[2.5rem] border border-[var(--sky-line)] bg-[var(--sky-pale)]" />
-              <div className="absolute -bottom-4 -right-4 h-48 w-48 rounded-[2rem] border border-[var(--sky-line)] bg-[var(--white)]" />
-              <div className="absolute left-8 top-8 font-['Fraunces',Georgia,serif] text-6xl font-bold leading-none text-[var(--sky-deep)] opacity-20 select-none">
-                "
-              </div>
-              <p className="absolute inset-0 flex items-center justify-center px-10 text-center font-['Fraunces',Georgia,serif] text-lg font-medium italic leading-8 text-[var(--ink)]">
-                Cada sessão é um ato de cuidado consigo mesmo.
+          <div className="relative">
+            <div className="grid items-center gap-6 sm:grid-cols-[auto_1fr_auto] sm:gap-10">
+              <p className="island-kicker whitespace-nowrap text-center text-[var(--ink-muted)] sm:text-left">
+                Sua jornada
+              </p>
+
+              <h2 className="display-title text-center text-3xl font-medium uppercase leading-[1.05] tracking-tight text-[var(--ink)] sm:text-4xl lg:text-5xl">
+                Construindo um<br />futuro melhor<br />juntos
+              </h2>
+
+              <p className="island-kicker whitespace-nowrap text-center text-[var(--ink-muted)] sm:text-right">
+                Começa aqui
               </p>
             </div>
+
+            <p className="mx-auto mt-10 max-w-2xl text-center text-base leading-8 text-[var(--ink-soft)]">
+              Acredito que a terapia é um dos gestos mais corajosos que alguém pode fazer por si mesmo.
+              Um espaço onde não há resposta certa, onde o tempo é seu — para pausar, sentir e entender.
+              Estou aqui para caminhar junto, com escuta real e presença genuína.
+            </p>
           </div>
         </div>
       </div>

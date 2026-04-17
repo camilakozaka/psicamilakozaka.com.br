@@ -1,26 +1,37 @@
+import ImagePlaceholder from './ImagePlaceholder'
+
+const etapas = [
+  { year: '2018–2023', title: 'Graduação em Psicologia', place: 'UFJF — Universidade Federal de Juiz de Fora' },
+  { year: '2023–2024', title: 'Especialização em TCC', place: 'Instituto de TCC — Curitiba/PR' },
+]
+
 export default function SectionFormacao() {
   return (
-    <section id="formacao" className="section-alt py-20 sm:py-24">
+    <section id="formacao" className="bg-white py-16 sm:py-20">
       <div className="page-wrap px-4">
-        <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-start">
+        <div className="grid items-center gap-12 rounded-[3rem] bg-[var(--sky-pale)] px-6 py-16 sm:rounded-[4rem] sm:px-12 sm:py-20 lg:grid-cols-2">
+          <ImagePlaceholder
+            label="Formação"
+            rounded="arch"
+            className="aspect-[4/5] w-full max-w-[420px] mx-auto lg:mx-0"
+          />
+
           <div>
-            <span className="accent-line" />
-            <p className="island-kicker mb-3">Trajetória acadêmica</p>
-            <h2 className="display-title mb-6 text-4xl font-bold text-[var(--ink)] sm:text-5xl">
+            <p className="island-kicker mb-4 text-[var(--sky-deep)]">Trajetória</p>
+            <h2 className="display-title mb-6 text-3xl font-medium leading-tight text-[var(--ink)] sm:text-4xl lg:text-5xl">
               Formada pela UFJF
             </h2>
-            <p className="mb-8 max-w-xl text-base leading-8 text-[var(--ink-soft)]">
+            <p className="mb-10 text-base leading-8 text-[var(--ink-soft)]">
               Minha formação em Psicologia pela Universidade Federal de Juiz de Fora me deu
-              uma base sólida — científica, ética e humanista. A universidade pública moldou
-              minha visão de que a saúde mental é um direito, não um privilégio.
+              uma base sólida — científica, ética e humanista. A saúde mental é um direito, não privilégio.
             </p>
 
             <div className="space-y-4">
-              {[
-                { year: '2018–2023', title: 'Graduação em Psicologia', place: 'UFJF — Universidade Federal de Juiz de Fora' },
-                { year: '2023–2024', title: 'Especialização em TCC', place: 'Instituto de TCC — Curitiba/PR' },
-              ].map(({ year, title, place }) => (
-                <div key={title} className="flex gap-5 rounded-2xl border border-[var(--line)] bg-[var(--white)] p-5">
+              {etapas.map(({ year, title, place }) => (
+                <div
+                  key={title}
+                  className="flex gap-5 rounded-2xl border border-[var(--sky-line)] bg-white p-5"
+                >
                   <div className="pt-0.5">
                     <span className="island-kicker text-[var(--ink-muted)]">{year}</span>
                   </div>
@@ -30,14 +41,6 @@ export default function SectionFormacao() {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Badge visual */}
-          <div className="flex justify-center lg:justify-end lg:pt-16">
-            <div className="flex h-40 w-40 flex-col items-center justify-center rounded-full border-2 border-[var(--sky-line)] bg-[var(--sky-pale)] text-center">
-              <span className="display-title text-3xl font-bold text-[var(--sky-deep)]">UFJF</span>
-              <span className="mt-1 text-xs font-semibold text-[var(--ink-muted)]">Psicologia</span>
             </div>
           </div>
         </div>

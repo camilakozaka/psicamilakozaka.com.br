@@ -1,30 +1,38 @@
 export default function SectionInicio() {
+  const heroImage = encodeURI('/assets/a mente vencendo o humor.jpg')
+
   return (
-    <section id="inicio" className="page-wrap px-4 py-20 sm:py-28">
-      <div className="max-w-2xl rise-in">
-        <span className="accent-line" />
-        <p className="island-kicker mb-4">Psicóloga Clínica · CRP 08/XXXXX</p>
-        <h1 className="display-title mb-6 text-5xl font-bold leading-[1.08] tracking-tight text-[var(--ink)] sm:text-6xl lg:text-7xl">
-          Um espaço para<br />
-          <span className="text-[var(--sky-deep)]">cuidar de você.</span>
-        </h1>
-        <p className="mb-10 text-lg leading-relaxed text-[var(--ink-soft)]">
-          Sou Camila Kozaka, psicóloga especialista em Terapia Cognitivo-Comportamental.
-          Atendo adultos presencialmente e online — um lugar honesto, seguro e sem julgamentos.
-        </p>
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="#contato"
-            className="inline-block rounded-full bg-[var(--sky-deep)] px-8 py-3.5 text-sm font-bold text-white shadow-[0_4px_20px_rgba(46,157,228,0.35)] transition hover:-translate-y-0.5 hover:bg-[var(--sky)] hover:shadow-[0_6px_24px_rgba(91,184,245,0.4)]"
-          >
-            Agendar consulta
-          </a>
-          <a
-            href="#sobre"
-            className="inline-block rounded-full border border-[var(--line)] px-8 py-3.5 text-sm font-bold text-[var(--ink)] transition hover:border-[var(--sky-line)] hover:text-[var(--sky-deep)]"
-          >
-            Conhecer mais
-          </a>
+    <section id="inicio" className="bg-white pb-8 pt-4 sm:pb-12 sm:pt-6">
+      <div className="pr-4 sm:pr-6">
+        <div className="relative overflow-hidden rounded-r-[2rem]">
+          <div className="grid items-stretch lg:grid-cols-[1.2fr_1fr]">
+            {/* Left block — flush to the left edge with fully rounded right side */}
+            <div className="rise-in relative min-h-[420px] overflow-hidden bg-[var(--sky-deep)] lg:rounded-r-full sm:min-h-[560px] lg:min-h-[640px]">
+              <img
+                src={heroImage}
+                alt="Retrato"
+                className="absolute inset-0 h-full w-full object-cover lg:w-[92%]"
+              />
+            </div>
+
+            {/* Right text card — centered in right half */}
+            <div className="rise-in flex items-center justify-center p-6 sm:p-12 lg:p-16">
+              <div className="relative w-full max-w-md rounded-[2rem] bg-white px-8 py-12 text-center shadow-[0_20px_60px_rgba(46,157,228,0.15)] sm:px-12 sm:py-16">
+                <p className="island-kicker mb-4 text-[var(--sky-deep)]">
+                  Psicóloga · CRP 08/XXXXX
+                </p>
+                <h1 className="display-title mb-8 text-4xl font-medium leading-[1.1] tracking-tight text-[var(--ink)] sm:text-5xl">
+                  Um espaço<br />para cuidar<br />de você
+                </h1>
+                <a
+                  href="#contato"
+                  className="inline-block rounded-full bg-[var(--sky-deep)] px-8 py-3 text-xs font-semibold uppercase tracking-widest text-white transition hover:-translate-y-0.5 hover:bg-[var(--sky)]"
+                >
+                  Vamos conversar
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

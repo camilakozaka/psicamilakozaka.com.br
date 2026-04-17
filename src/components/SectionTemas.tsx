@@ -9,23 +9,21 @@ const temas = [
 
 export default function SectionTemas() {
   return (
-    <section id="temas" className="py-20 sm:py-24">
+    <section id="temas" className="bg-white py-16 sm:py-20">
       <div className="page-wrap px-4">
-        <span className="accent-line" />
-        <p className="island-kicker mb-3">O que me move</p>
-        <h2 className="display-title mb-4 text-4xl font-bold text-[var(--ink)] sm:text-5xl">
-          Temas que marcaram<br className="hidden sm:block" /> minha jornada
-        </h2>
-        <p className="mb-12 max-w-xl text-base leading-7 text-[var(--ink-soft)]">
-          Esses temas aparecem com frequência no consultório — e cada um deles me faz crescer
-          junto com quem os traz.
-        </p>
+        <div className="rounded-[3rem] bg-[var(--sky-pale)] px-6 py-16 sm:rounded-[4rem] sm:px-12 sm:py-20">
+        <div className="mb-14 text-center">
+          <p className="island-kicker mb-4 text-[var(--sky-deep)]">O que me move</p>
+          <h2 className="display-title mx-auto max-w-2xl text-3xl font-medium leading-[1.1] text-[var(--ink)] sm:text-4xl lg:text-5xl">
+            Temas que marcaram minha jornada
+          </h2>
+        </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {temas.map(({ emoji, label, desc }, i) => (
             <div
               key={label}
-              className="rise-in flex gap-4 rounded-2xl border border-[var(--line)] bg-[var(--white)] p-5 transition hover:border-[var(--sky-line)] hover:bg-[var(--sky-pale)]"
+              className="rise-in flex gap-4 rounded-2xl border border-[var(--sky-line)] bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(46,157,228,0.1)]"
               style={{ animationDelay: `${i * 60}ms` }}
             >
               <span className="text-2xl leading-none">{emoji}</span>
@@ -35,6 +33,7 @@ export default function SectionTemas() {
               </div>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>
