@@ -1,4 +1,4 @@
-const WHATSAPP_PHONE = '5541999999999'
+const WHATSAPP_PHONE = '5515997539068'
 const WHATSAPP_MESSAGE = 'Oi, Gostaria de saber mais sobre a terapia'
 
 export function getWhatsappUrl() {
