@@ -1,3 +1,5 @@
+import { getWhatsappUrl } from '#/utils/openWhatsapp'
+
 export default function Header() {
 
   const logoImage = encodeURI('/assets/logo.svg')
@@ -21,7 +23,9 @@ export default function Header() {
           <a href="#temas" className="nav-link">Temas</a>
           <a href="#tcc" className="nav-link">TCC</a>
           <a
-            href="#contato"
+            href={getWhatsappUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-[var(--sky-deep)] px-5 py-2 text-sm font-bold text-white no-underline transition hover:bg-[var(--sky)]"
           >
             Contato

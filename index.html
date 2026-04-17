@@ -1,31 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.ico" />
-    <title>Psicóloga Camila Kozaka</title>
-    <script>
-      // Restore path from GitHub Pages 404 redirect
-      ;(function () {
-        var redirect = sessionStorage.redirect
-        delete sessionStorage.redirect
-        if (redirect && redirect !== location.href) {
-          history.replaceState(null, null, redirect)
-        }
-        var p = new URLSearchParams(location.search).get('p')
-        if (p) {
-          history.replaceState(
-            null,
-            null,
-            p + (new URLSearchParams(location.search).get('q') ? '?' + new URLSearchParams(location.search).get('q').replace(/~and~/g, '&') : '') + location.hash,
-          )
-        }
-      })()
-    </script>
+
+    <title>Psicóloga Camila Kozaka | Terapia Online e Presencial</title>
+    <meta name="description" content="Psicóloga Camila Kozaka — atendimento online e presencial em Sorocaba. Terapia cognitivo-comportamental para adultos e TCC." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://psicamilakozaka.com.br/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://psicamilakozaka.com.br/" />
+    <meta property="og:title" content="Psicóloga Camila Kozaka | Terapia Online e Presencial" />
+    <meta property="og:description" content="Atendimento online e presencial em Sorocaba. Terapia cognitivo-comportamental para adultos e TCC." />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="app"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
