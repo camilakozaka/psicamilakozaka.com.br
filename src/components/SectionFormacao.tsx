@@ -1,20 +1,22 @@
 import ImagePlaceholder from './ImagePlaceholder'
 
 const etapas = [
-  { year: '2018–2023', title: 'Graduação em Psicologia', place: 'UFJF — Universidade Federal de Juiz de Fora' },
-  { year: '2023–2024', title: 'Especialização em TCC', place: 'Instituto de TCC — Curitiba/PR' },
+  { year: '2021–2026', title: 'Graduação em Psicologia', place: 'UFJF — Universidade Federal de Juiz de Fora' },
 ]
 
 export default function SectionFormacao() {
+  const formadaImage = encodeURI('/assets/formada.webp')
   return (
-    <section id="formacao" className="bg-white py-16 sm:py-20">
+    <section id="formacao" className="bg-white py-10 sm:py-15">
       <div className="page-wrap px-4">
-        <div className="grid items-center gap-12 rounded-[3rem] bg-[var(--sky-pale)] px-6 py-16 sm:rounded-[4rem] sm:px-12 sm:py-20 lg:grid-cols-2">
-          <ImagePlaceholder
-            label="Formação"
-            rounded="arch"
-            className="aspect-[4/5] w-full max-w-[420px] mx-auto lg:mx-0"
-          />
+        <div className="grid items-center gap-12 bg-[var(--sky-pale)] px-6 py-10 sm:px-12 sm:py-20 lg:grid-cols-2">
+          <div className="rise-in relative min-h-[420px] rounded-3xl overflow-hidden bg-[var(--sky-deep)] sm:min-h-[560px] lg:min-h-[640px]">
+            <img
+              src={formadaImage}
+              alt="Formada"
+              className="absolute inset-0 h-full w-full object-cover object-center"
+            />
+          </div>
 
           <div>
             <p className="island-kicker mb-4 text-[var(--sky-deep)]">Trajetória</p>

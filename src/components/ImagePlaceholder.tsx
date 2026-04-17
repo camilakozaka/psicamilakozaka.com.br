@@ -20,12 +20,12 @@ export default function ImagePlaceholder({
 
   return (
     <div
-      className={`relative overflow-hidden bg-gradient-to-br from-[var(--sky-pale)] to-[#d9ecfb] ${shape} ${className}`}
+      className={`relative overflow-hidden bg-gradient-to-br from-[var(--cream)] to-[var(--detail-soft)] ${shape} ${className}`}
       aria-label={label}
       role="img"
     >
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="flex flex-col items-center gap-2 text-[var(--sky-deep)]/50">
+        <div className="flex flex-col items-center gap-2 text-[var(--sun-deep)]/45">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
             <rect x="3" y="3" width="18" height="18" rx="2" />
             <circle cx="9" cy="9" r="2" />

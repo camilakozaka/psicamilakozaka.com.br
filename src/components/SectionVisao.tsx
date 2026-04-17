@@ -1,15 +1,8 @@
 export default function SectionVisao() {
   return (
-    <section id="sobre" className="bg-white pt-8 pb-0">
-      <div className="page-wrap px-4">
-        {/* Rounded blue surface wrap */}
-        <div className="relative overflow-hidden rounded-t-[3rem] bg-[var(--sky-pale)] px-6 py-20 sm:rounded-t-[5rem] sm:px-12 sm:py-28">
-          {/* Inner arch ring */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute left-1/2 top-0 h-[85%] w-[90%] -translate-x-1/2 rounded-b-[50%] bg-white/60"
-          />
-
+    <section id="sobre" className="bg-[#2668C7]">
+      <div className="bottom-ellipse sm:pb-20 overflow-hidden bg-[var(--cream)] px-6 py-0 sm:px-10 sm:py-24">
+        <div className="page-wrap">
           <div className="relative">
             <div className="grid items-center gap-6 sm:grid-cols-[auto_1fr_auto] sm:gap-10">
               <p className="island-kicker whitespace-nowrap text-center text-[var(--ink-muted)] sm:text-left">
@@ -25,7 +18,7 @@ export default function SectionVisao() {
               </p>
             </div>
 
-            <p className="mx-auto mt-10 max-w-2xl text-center text-base leading-8 text-[var(--ink-soft)]">
+            <p className="mx-auto mt-10 max-w-2xl text-center text-base leading-8 text-[var(--ink-soft)] ">
               Acredito que a terapia é um dos gestos mais corajosos que alguém pode fazer por si mesmo.
               Um espaço onde não há resposta certa, onde o tempo é seu — para pausar, sentir e entender.
               Estou aqui para caminhar junto, com escuta real e presença genuína.

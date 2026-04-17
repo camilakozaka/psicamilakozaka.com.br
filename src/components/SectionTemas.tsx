@@ -9,7 +9,7 @@ const temas = [
 
 export default function SectionTemas() {
   return (
-    <section id="temas" className="bg-white py-16 sm:py-20">
+    <section id="temas" className="bg-[#40A5F2] py-16 sm:py-20">
       <div className="page-wrap px-4">
         <div className="rounded-[3rem] bg-[var(--sky-pale)] px-6 py-16 sm:rounded-[4rem] sm:px-12 sm:py-20">
         <div className="mb-14 text-center">
@@ -23,7 +23,7 @@ export default function SectionTemas() {
           {temas.map(({ emoji, label, desc }, i) => (
             <div
               key={label}
-              className="rise-in flex gap-4 rounded-2xl border border-[var(--sky-line)] bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(46,157,228,0.1)]"
+              className="rise-in flex gap-4 rounded-2xl border border-[var(--sky-line)] bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(64,165,242,0.1)]"
               style={{ animationDelay: `${i * 60}ms` }}
             >
               <span className="text-2xl leading-none">{emoji}</span>

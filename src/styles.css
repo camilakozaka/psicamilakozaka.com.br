@@ -10,10 +10,14 @@
   --ink: #0f1f2e;
   --ink-soft: #4a6070;
   --ink-muted: #8aa0b0;
-  --sky: #5bb8f5;
-  --sky-deep: #2e9de4;
-  --sky-pale: #e8f5fd;
-  --sky-line: rgba(91, 184, 245, 0.25);
+  --sky: #72bdf5;
+  --sky-deep: #40a5f2;
+  --sky-pale: #edf7fe;
+  --sky-line: rgba(64, 165, 242, 0.25);
+  --sun-soft: #f4f0a3;
+  --sun-deep: #d8cf63;
+  --detail-soft: #fdc4ea;
+  --cream: #fbf8ef;
   --white: #ffffff;
   --off-white: #f8fafc;
   --line: rgba(15, 31, 46, 0.1);
@@ -41,7 +45,6 @@ body {
 }
 
 a {
-  color: var(--sky-deep);
   text-decoration: none;
 }
 
@@ -133,4 +136,9 @@ a:hover {
   background: var(--sky);
   border-radius: 2px;
   margin-bottom: 1.25rem;
+}
+
+.bottom-ellipse {
+  border-bottom-left-radius: 50% clamp(5rem, 10vw, 9rem);
+  border-bottom-right-radius: 50% clamp(5rem, 10vw, 9rem);
 }

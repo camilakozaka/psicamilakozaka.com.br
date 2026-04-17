@@ -1,12 +1,18 @@
 export default function Header() {
+
+  const logoImage = encodeURI('/assets/logo.svg')
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-white/90 px-4 backdrop-blur-md">
+    <header className="  sticky top-0 z-50 border-b border-[var(--line)] bg-[#40A5F2] px-4 backdrop-blur-md">
       <nav className="page-wrap flex items-center justify-between py-4">
         <a
           href="#inicio"
           className="text-sm font-bold text-[var(--ink)] no-underline hover:text-[var(--sky-deep)]"
         >
-          Camila Kozaka
+          <img
+            src={logoImage}
+            alt="Logo Instrutorz"
+            className="block h-16 w-auto"
+          />
         </a>
 
         <div className="hidden items-center gap-6 sm:flex">
