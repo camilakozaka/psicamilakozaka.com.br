@@ -12,7 +12,6 @@ import FloatingWhatsAppButton from '#/components/FloatingWhatsAppButton'
 export default function App() {
   return (
     <>
-      <Header />
       <main>
         <SectionInicio />
         <SectionVisao />
