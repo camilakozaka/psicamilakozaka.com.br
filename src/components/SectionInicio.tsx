@@ -18,7 +18,7 @@ export default function SectionInicio() {
 
             {/* Right text block — inverted shape, flush to the right */}
             <div className="rise-in flex items-center justify-center overflow-visible lg:-ml-[85px] lg:z-10">
-              <div className="relative flex min-h-[260px] w-full items-center justify-center bg-transparent px-6 sm:justify-start sm:rounded-l-full sm:border-b-2 sm:border-l-2 sm:border-t-2 sm:border-yellow-400 sm:pl-24 sm:pr-0 lg:min-h-[440px] lg:pl-28">
+              <div className="relative flex min-h-[260px] w-full items-center justify-center bg-transparent px-6 sm:justify-start sm:rounded-l-full sm:border-b-2 sm:border-l-2 sm:border-t-2 sm:border-[#2668C7] sm:pl-24 sm:pr-0 lg:min-h-[440px] lg:pl-28">
                 <div className="relative z-10 flex w-full flex-col items-center text-center">
                   <img
                     src={logoImage}
