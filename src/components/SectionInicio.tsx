@@ -1,3 +1,5 @@
+import { trackEvent } from '#/utils/analytics'
+
 export default function SectionInicio() {
   const heroImage = encodeURI('/assets/vencendo_humor.webp')
   const logoImage = encodeURI('/assets/logo_white_bg.svg')
@@ -27,6 +29,12 @@ export default function SectionInicio() {
                   />
                   <a
                     href="#contato"
+                    onClick={() =>
+                      trackEvent('click_hero_cta', {
+                        source: 'hero_section',
+                        destination: 'contato',
+                      })
+                    }
                     className="inline-flex items-center justify-center rounded-full bg-[var(--sky-deep)] px-8 py-3 text-center text-xs font-semibold uppercase tracking-widest text-white transition hover:-translate-y-0.5 hover:bg-[var(--sky)]"
                   >
                     Vamos conversar

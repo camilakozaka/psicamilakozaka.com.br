@@ -4,7 +4,7 @@ export default function FloatingWhatsAppButton() {
   return (
     <button
       type="button"
-      onClick={openWhatsapp}
+      onClick={() => openWhatsapp('floating_button')}
       aria-label="Falar no WhatsApp"
       className="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25d366] text-white shadow-[0_10px_30px_rgba(37,211,102,0.35)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_14px_36px_rgba(37,211,102,0.45)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25d366]/30 sm:bottom-6 sm:right-6 sm:h-16 sm:w-16"
     >

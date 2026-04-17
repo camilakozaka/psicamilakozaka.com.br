@@ -15,7 +15,7 @@ export default function SectionContato() {
           </p>
           <button
             type="button"
-            onClick={openWhatsapp}
+            onClick={() => openWhatsapp('contact_section')}
             className="inline-flex items-center gap-2.5 rounded-full bg-[#25d366] px-8 py-4 text-sm font-bold text-white shadow-[0_6px_24px_rgba(37,211,102,0.3)] transition hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(37,211,102,0.4)]"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
