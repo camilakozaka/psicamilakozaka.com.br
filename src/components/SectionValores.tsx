@@ -13,6 +13,9 @@ export default function SectionValores() {
   return (
     <section id="valores" className="bg-[#2668C7] py-12  sm:py-16">
       <div className="page-wrap px-4">
+        <div className="mb-8 text-center sm:mb-10">
+          <h2 className="display-title text-3xl text-white sm:text-4xl">Meus valores como psicóloga</h2>
+        </div>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6">
           {valores.map(({ label, Icon }, i) => (
             <div

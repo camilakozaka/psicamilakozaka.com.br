@@ -8,10 +8,10 @@ export default function SectionContato() {
           <span className="accent-line mx-auto" />
           <p className="island-kicker mb-4">Vamos começar</p>
           <h2 className="display-title mb-5 text-4xl font-bold text-[var(--ink)] sm:text-5xl">
-            O primeiro passo<br className="hidden sm:block" /> é o mais importante.
+            Conte comigo<br className="hidden sm:block" /> para dar esse primeiro passo
           </h2>
           <p className="mx-auto mb-10 max-w-md text-base leading-7 text-[var(--ink-soft)]">
-            Entre em contato pelo WhatsApp. Nenhuma pergunta é pequena demais — estou aqui.
+            Entre em contato pelo WhatsApp. Nenhuma pergunta é pequena demais, estou aqui por você :)
           </p>
           <button
             type="button"

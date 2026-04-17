@@ -1,10 +1,13 @@
 const temas = [
-  { emoji: '🌀', label: 'Ansiedade', desc: 'Padrões de pensamento, ruminação e medo antecipatório.' },
-  { emoji: '🌧', label: 'Depressão', desc: 'Tristeza profunda, perda de sentido e desmotivação.' },
-  { emoji: '🤝', label: 'Relacionamentos', desc: 'Vínculos, comunicação, limites e apego.' },
-  { emoji: '🪞', label: 'Autoestima', desc: 'Crenças limitantes, autocrítica e autoimagem.' },
-  { emoji: '🔄', label: 'TOC e Fobias', desc: 'Pensamentos intrusivos, rituais e medos específicos.' },
-  { emoji: '🧭', label: 'Autoconhecimento', desc: 'Identidade, valores e propósito de vida.' },
+  { emoji: '💖 ', label: 'Autoestima e amor próprio', desc: '' },
+  { emoji: '🤝', label: 'Comunicação, limtes e habilidades sociais', desc: ' ' },
+  { emoji: '✍️', label: 'Autocobrança e perfeccionismo', desc: ' ' },
+  { emoji: '🫂', label: 'Relacionamentos', desc: ' ' },
+  { emoji: '😶‍🌫️', label: 'Timidez / Ansiedade social', desc: '' },
+  { emoji: '🌀', label: 'Ansiedade e Transtornos de ansiedade', desc: '' },
+  { emoji: '🌧', label: 'Depressão', desc: '' },
+  { emoji: '🩹', label: 'Experiências traumáticas', desc: '' },
+  { emoji: '👩🏻', label: 'Violência contra a mulher', desc: ' ' },
 ]
 
 export default function SectionTemas() {
@@ -13,9 +16,11 @@ export default function SectionTemas() {
       <div className="page-wrap px-4">
         <div className="rounded-[3rem] bg-[var(--sky-pale)] px-6 py-16 sm:rounded-[4rem] sm:px-12 sm:py-20">
         <div className="mb-14 text-center">
-          <p className="island-kicker mb-4 text-[var(--sky-deep)]">O que me move</p>
+          <p className="island-kicker mb-4 text-[var(--sky-deep)]">minha experiência
+          
+          </p>
           <h2 className="display-title mx-auto max-w-2xl text-3xl font-medium leading-[1.1] text-[var(--ink)] sm:text-4xl lg:text-5xl">
-            Temas que marcaram minha jornada
+            Temas presentes em minha jornada de estudos
           </h2>
         </div>
 

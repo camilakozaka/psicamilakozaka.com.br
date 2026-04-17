@@ -1,8 +1,9 @@
 const etapas = [
-  { n: '01', title: 'Avaliação inicial', desc: 'Entendemos juntos o que te trouxe até aqui, seus objetivos e o contexto de vida.' },
-  { n: '02', title: 'Identificação de padrões', desc: 'Mapeamos pensamentos automáticos, crenças e comportamentos que mantêm o sofrimento.' },
-  { n: '03', title: 'Reestruturação cognitiva', desc: 'Questionamos pensamentos disfuncionais e construímos perspectivas mais realistas.' },
-  { n: '04', title: 'Mudança comportamental', desc: 'Experimentos práticos entre sessões para testar novas formas de agir e sentir.' },
+  { n: '01', title: 'Avaliação inicial gratuita', desc: 'Este será um momento para nos conhecermos, entendermos o que te trás à terapia e se eu sou a melhor profissional para te atender.' },
+  { n: '02', title: 'Aliança de trabalho', desc: 'Se fizer sentido, pensaremos em metas e direções para trabalharmos, olhando para o que é importante para você ' },
+  { n: '03', title: 'Agendamento', desc: 'Encontraremos a melhor data e hora para nosso trabalho e a partir daí já teremos dado início ao processo terapêutico!.' },
+  { n: '04', title: 'O que você precisa saber', desc: 'Se estiver em dúvida sobre o que falar, fique em paz! Faremos esse caminho juntos! Além disso, sempre respeitarei seu tempo, então não precisa falar tudo de uma vez :)' },
+  { n: '05', title: 'Sigilo terapêutico', desc: 'Independente se vamos trabalhar juntos, saiba que o que falar ficará entre nós, de acordo com nosso sigilo terapêutico' }
 ]
 
 export default function SectionTCC() {
@@ -11,9 +12,9 @@ export default function SectionTCC() {
       <div className="page-wrap px-4">
         <div className="rounded-[3rem] bg-[var(--sky-pale)] px-6 py-16 sm:rounded-[4rem] sm:px-12 sm:py-20">
         <div className="mb-14 text-center">
-          <p className="island-kicker mb-4 text-[var(--sky-deep)]">Abordagem</p>
+          <p className="island-kicker mb-4 text-[var(--sky-deep)]">Primeiros passos</p>
           <h2 className="display-title mb-5 text-3xl font-medium leading-[1.1] text-[var(--ink)] sm:text-4xl lg:text-5xl">
-            TCC e como funciona
+            Como iniciar um atendimento comigo
           </h2>
           <p className="mx-auto max-w-2xl text-base leading-7 text-[var(--ink-soft)]">
             A Terapia Cognitivo-Comportamental parte de uma premissa simples:

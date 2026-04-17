@@ -21,11 +21,17 @@ export default function SectionFormacao() {
           <div>
             <p className="island-kicker mb-4 text-[var(--sky-deep)]">Trajetória</p>
             <h2 className="display-title mb-6 text-3xl font-medium leading-tight text-[var(--ink)] sm:text-4xl lg:text-5xl">
-              Formada pela UFJF
+              Psicóloga pela Universidade Federal de Juiz de Fora
             </h2>
             <p className="mb-10 text-base leading-8 text-[var(--ink-soft)]">
-              Minha formação em Psicologia pela Universidade Federal de Juiz de Fora me deu
-              uma base sólida — científica, ética e humanista. A saúde mental é um direito, não privilégio.
+           <b>Projetos que fizeram parte da minha jornada:</ b> <br></br>
+<b>Dando conta das contas:</b> projeto de extensão da UFJF em parceria com a Prefeitura 
+de Juiz de Fora trabalhando Psicologia econômica e financeira na prática <br></br>
+<b>Fala Aberta:</b> projeto de extensão da UFJF com o objetivo de sensibilidade a 
+comunidade a respeito do assédio <br></br>
+<b> Núcleo de Estudos em Violência e Ansiedade Social: 
+  </b> projeto da UFJF que une extensão e pesquisa, em que atualmente atuarei como terapeuta principal no Grupo Tímidos, que fornece psicoterapia grupal gratuita para o enfrentamento da ansiedade social <br></br>
+
             </p>
 
             <div className="space-y-4">
