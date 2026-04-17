@@ -1,7 +1,7 @@
 import { trackEvent } from '#/utils/analytics'
 
 export default function SectionInicio() {
-  const heroImage = encodeURI('/assets/vencendo_humor.webp')
+  const heroImage = encodeURI('/assets/foto-principal.png')
   const logoImage = encodeURI('/assets/logo_white_bg.svg')
 
   return (
@@ -13,7 +13,7 @@ export default function SectionInicio() {
             <div className="rise-in relative min-h-[420px] overflow-hidden rounded-b-[999px] bg-[var(--sky-deep)] sm:min-h-[560px] sm:rounded-b-none lg:min-h-[640px] lg:rounded-r-full">
               <img
                 src={heroImage}
-                alt="Retrato"
+                alt="Retrato da psicóloga Mila Kozaka"
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </div>

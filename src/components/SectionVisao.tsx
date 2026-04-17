@@ -4,7 +4,7 @@ export default function SectionVisao() {
       <div className="bottom-ellipse overflow-hidden bg-[var(--cream)] px-6 pt-6 pb-24 sm:px-10 sm:pt-24 sm:pb-28">
         <div className="page-wrap flex justify-center">
           <div className="flex max-w-4xl flex-col items-center text-center">
-            <h2 className="display-title mx-auto max-w-3xl text-3xl font-medium uppercase leading-[1.05] tracking-tight text-[var(--ink)] sm:text-4xl lg:text-5xl">
+            <h2 className="display-title mx-auto max-w-3xl text-3xl font-medium uppercase leading-[1.05] tracking-tight text-[#2668C7] sm:text-4xl lg:text-5xl">
               Cultivando com
               <br />
               carinho uma vida
